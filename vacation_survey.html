@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel= "stylesheet" href="vacation_survey.css">
+</head>
+<body>
+
+<h2>Vacation Survey Form</h2>
+
+<div class="container">
+  <form action="" id="register_form" onsubmit=" return myFunction()">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." >
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required placeholder="Enter a valid email address..">
+	
+	<label for="age">Age</label>
+	<input type="number" id="age" name="age" min="1" max="100" placeholder="Enter your Age">
+	<br>
+	
+	<label>Places you have visited</label>
+	<ul id="prefer" style="list-style: none;">	
+	<li class="checkbox"><input  type="checkbox" class="check_box" name="prefer" value="1">Alaska</li>
+	<li class="checkbox"><input  type="checkbox" class="check_box" name="prefer" value="2">Bahamas</li>
+	<li class="checkbox"><input  type="checkbox" class="check_box" name="prefer" value="3">Carribean Island (Jamaica, Dominican Republic, Virgin Islands, etc.)</li>
+	<li class="checkbox"><input  type="checkbox" class="check_box" name="prefer" value="4">Central America (Costa Rico, Belize, Honduras, etc)</li>
+	<li class="checkbox"><input  type="checkbox" class="check_box" name="prefer" value="5">Disney</li>
+	<li class="checkbox"><input  type="checkbox" class="check_box" name="prefer" value="6">Europe</li>
+	<li class="checkbox"><input  type="checkbox" class="check_box" name="prefer" value="7">Florida</li>
+	<li class="checkbox"><input  type="checkbox" class="check_box" name="prefer" value="8">Hawaii</li>
+	<li class="checkbox"><input  type="checkbox" class="check_box" name="prefer" value="9">Las Vegas</li>
+	<li class="checkbox"><input  type="checkbox" class="check_box" name="prefer" value="10">Other</li>
+	</ul>
+	
+		   
+	<label>How likely is that you would recommend any of these places to a friend?</label>   
+	<ul style="list-style: none";> 
+    <li class="radio"><input type="radio" class="radio_button" name="radio-buttons" value="1">Definitely</li>
+    <li class="radio"><input type="radio" class="radio_button" name="radio-buttons" value="2">Maybe</li>
+	<li class="radio"><input type="radio" class="radio_button" name="radio-buttons" value="3">Not sure</li>
+    </ul>
+	
+	<label>How often do you take a vacation in a year?</label>
+	<select class="dropdown">
+	   <option value="">Select an option</option>
+       <option value="Once in four months">Once in four months</option>
+	   <option value="Every six months">Every six months</option>
+	   <option value="Once a year">Once a year</option>
+	   <option value="Not even once">Not even once</option>
+     </select>
+
+    <label for="detail">What do you like the most about the places you visited?</label>
+    <textarea id="detail" name="detail" placeholder="Write something.."></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+  <script src="vacation_survey.js"></script>
+</body>
+</html>
+  
